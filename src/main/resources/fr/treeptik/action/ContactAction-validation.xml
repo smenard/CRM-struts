@@ -1,0 +1,30 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+       "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+	<field name="contact.nom">
+		<field-validator type="requiredstring">
+			<message>Nom obligatoire</message>
+		</field-validator>
+	</field>
+<field name="contact.prenom">
+		<field-validator type="requiredstring">
+			<message>Prénom obligatoire</message>
+		</field-validator>
+	</field>
+
+<field name="contact.mail">
+		<field-validator type="requiredstring">
+			<message>E-mail obligatoire</message>
+		</field-validator>
+	</field>
+	<validator type="email">
+   <param name="fieldname">contact.mail</param>
+   <message>L'adresse e-mail n'est pas valide</message>
+</validator>
+<!-- 	<validator type="expression"> -->
+<!-- 		<param name="expression">user.name != user.password</param> -->
+<!-- 		<message>Le username et le mot de passe doivent être différents -->
+<!-- 		</message> -->
+<!-- 	</validator> -->
+</validators>

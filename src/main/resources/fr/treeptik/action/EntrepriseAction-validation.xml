@@ -1,0 +1,26 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+       "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+	<field name="entreprise.raisonSociale">
+		<field-validator type="requiredstring">
+			<message>Raison sociale obligatoire</message>
+		</field-validator>
+	</field>
+<field name="entreprise.adresse">
+		<field-validator type="requiredstring">
+			<message>Adresse obligatoire</message>
+		</field-validator>
+	</field>
+
+<field name="entreprise.secteurActivite">
+		<field-validator type="requiredstring">
+			<message>Secteur d'activité obligatoire</message>
+		</field-validator>
+	</field>
+<!-- 	<validator type="expression"> -->
+<!-- 		<param name="expression">user.name != user.password</param> -->
+<!-- 		<message>Le username et le mot de passe doivent être différents -->
+<!-- 		</message> -->
+<!-- 	</validator> -->
+</validators>
